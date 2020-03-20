@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <title> Slide2</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fluid {
+            color: #993333;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        .video-js {
+            display: block;
+            width: 99vw;
+            height: 99vh;
+            object-fit: cover;
+            position: relative;
+        }
+
+        #no_of_goals {
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        span.line2 {
+            font-size: 15px;
+        }
+
+        span.line3 {
+            font-size: 15px;
+        }
+
+        .main-container {
+            position: relative !important;
+        }
+
+        .line0 {
+            position: relative;
+            top: 43px;
+            left: 470px;
+            height: 40px;
+            font-size: 30px;
+        }
+
+        .line1 {
+            position: absolute;
+            top: 140px;
+            left: 210px;
+            height: 40px;
+            font-size: 40px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 145px;
+            left: 512px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 145px;
+            left: 780px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 275px;
+            left: 515px;
+        }
+
+        .line5 {
+            position: absolute;
+            top: 272px;
+            left: 947px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <video id='myVideo1' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+            <source src="http://localhost:8081/slide2.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid">
+            <div class='row overlay'>
+                <div class="col-12-main-container">
+                    <div id="month" class='col-sm-3 line0'>
+                    </div>
+                    <div id="current_value" class='col-sm-3 line1'>
+                    </div>
+                    <div id="gain" class='col-sm-3 line2'>
+                    </div>
+                    <div id="invested_value" class='col-sm-3 line3'>
+                    </div>
+                    <div id="irr" class='col-sm-3 line4'>
+                    </div>
+
+                    <div id="no_of_goals" class='col-sm-3 line5'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script type="text/javascript" src='utilities.js'></script>
+    <script type="text/javascript" src='fetchData2.js'></script>
+    <script type="text/javascript" src='textToSpeech2.js'></script>
+</body>
+
+</html>

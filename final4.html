@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <title> Slide4</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/54a75f8cc2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fluid {
+            color: #993333;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        .video-js {
+            display: block;
+            width: 99vw;
+            height: 99vh;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .main-container {
+            position: relative !important;
+        }
+
+        .line0 {
+            position: absolute;
+            top: 110px;
+            left: 183px;
+            font-size: 30px;
+            width: 20px;
+            height: 40px;
+        }
+
+        .line6 {
+            position: absolute;
+            top: 110px;
+            left: 503px;
+            font-size: 30px;
+            width: 20px;
+            height: 40px;
+        }
+
+        .line12 {
+            position: absolute;
+            top: 110px;
+            left: 813px;
+            font-size: 30px;
+            width: 20px;
+            height: 40px;
+        }
+
+        .goals {
+            top: 110px;
+        }
+
+        #imageBox1 {
+            border-radius: 25px;
+            width: 280px;
+            height: 110px;
+        }
+
+        #imageBox2 {
+            border-radius: 25px;
+            width: 280px;
+            height: 110px;
+        }
+
+        #imageBox3 {
+            border-radius: 25px;
+            width: 280px;
+            height: 110px;
+        }
+        #icon1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+
+        #icon2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+
+        #icon3 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+
+        #name1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #name2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #name3 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #data1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #data2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #data3 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        .line2 {
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            left: 33px;
+        }
+        .line8 {
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            left: 33px;
+        }
+
+        .line14 {
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            left: 33px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <video id='myVideo4' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+            <source src="http://localhost:8081/slide4.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid">
+            <div class='row overlay'>
+                <div class="col-12-main-container">
+                    <span id="goals">
+                        <div id="goal1" class='col-sm-3 line0'>
+                            <div id="imageBox1" class='col-sm-3 line1'>
+                                <img id="imageBox1" src="http://localhost:8081/goalBox.png">
+                            </div>
+                            <div id="donutChart1" class='col-sm-3 line2'>
+                            </div>
+                            <div id="icon1" class='col-sm-3 line3'>
+                            </div>
+                            <div id="name1" class='col-sm-3 line4'>
+                            </div>
+                            <div id="data1" class='col-sm-3 line5'>
+                            </div>
+                        </div>
+                        <div id="goal2" class='col-sm-3 line6'>
+                            <div id="imageBox2" class='col-sm-3 line7'>
+                            </div>
+                            <div id="donutChart2" class='col-sm-3 line8'>
+                            </div>
+                            <div id="icon2" class='col-sm-3 line9'>
+                            </div>
+                            <div id="name2" class='col-sm-3 line10'>
+                            </div>
+                            <div id="data2" class='col-sm-3 line11'>
+                            </div>
+                        </div>
+                        <div id="goal3" class='col-sm-3 line12'>
+                            <div id="imageBox3" class='col-sm-3 line13'>
+                            </div>
+                            <div id="donutChart3" class='col-sm-3 line14'>
+                            </div>
+                            <div id="icon3" class='col-sm-3 line15'>
+                            </div>
+                            <div id="name3" class='col-sm-3 line16'>
+                            </div>
+                            <div id="data3" class='col-sm-3 line17'>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script type="text/javascript" src='progressbar.js'></script>
+    <script type="text/javascript" src='utilities.js'></script>
+    <script type="text/javascript" src='fetchData4.js'></script>
+    <script type="text/javascript" src='textToSpeech4.js'></script>
+</body>
+
+</html>

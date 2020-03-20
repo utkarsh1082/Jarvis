@@ -1,0 +1,37 @@
+{
+    "slide1": 
+    {
+        "investorName": "Pranav"
+    },
+    "slide2": 
+    {
+        "currentValue": 740000,
+        "investedAmount": 650000,
+        "gainPercentage": 14.00,
+        "irr": 10.05,
+        "numberOfGoals": 3,
+        "statementDate": "2015-05-25"
+    },
+    "slide3":
+    {
+        "investedAmount":650000,
+        "withdrawnAmount":450000,
+        "gain":-10,
+        "sip":3
+    },
+    "slide4":{
+        "sector1":["Sector A",20],
+        "sector2":["Sector B",40],
+        "sector3":["Sector C",5],
+        "sector4":["Sector D",15],
+        "sector5":["Sector E",20]
+    },
+    "slide5":{
+        "goals":[["Holiday",85000,60],["Marriage",28500,70],["Retirement",18500,30]]
+    },
+    "slide6":{
+        "mutualFunds":[["QuantumTaxSaving",30],["FranklinIndiaEquityFund",20],["DSP small cap Fund",10],["Axis Liquid Fund",20],["Others",20]],
+        "topSectors":[["HealthCare",20,"ambulance"],["AutoMobiles",10,"car"],["Cash & Others",5,"money-bill"],["Financials",30,"wallet"],["IT",20,"tv"]],
+        "topStocks":[["HDFC Bank Ltd:",3.41],["Infosys Ltd.",3.07],["ICICI Bank Ltd.",2.76],["Housing Developement Finance",2.51],["State Bank of India",2.04]]
+    }
+}

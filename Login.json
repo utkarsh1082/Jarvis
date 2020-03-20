@@ -1,0 +1,41 @@
+{
+    "success": true,
+    "DBData": [
+        {
+            "STATUS_ID": "STAT2",
+            "REG_STATUS": "STAT5",
+            "USER_ID": 10989,
+            "LOGIN_ATTEMPTS": 0,
+            "TOKEN": null,
+            "INVESTOR_ID": "INV10989",
+            "INVESTOR_NAME": "Pranav Date",
+            "INVESTOR_PAN": "AUSPD2227N",
+            "INV_PAN": "BHJPP7089P",
+            "INVESTOR_TYPE": "MIN",
+            "GUARDIAN_PAN": "AUSPD2227N",
+            "INVESTOR_DOB": "19/02/2001",
+            "KYC_FLAG": 1,
+            "INVESTOR_CONTACT": "9172450955",
+            "JH_COUNT": 0,
+            "JH1_PAN": null,
+            "JH2_PAN": null,
+            "JH1_DOB": null,
+            "JH2_DOB": null,
+            "BCSTATUS": 0,
+            "ADDHAAR_STATUS": 0,
+            "APP_FLAG": 1,
+            "MTM": 310658.17583645222,
+            "DAYCHANGE": 0,
+            "DAYCHANGEPER": 0,
+            "REGISTRATION_COMPLETE_FLAG": 1,
+            "RISK_PROFILE_PENDING": 0,
+            "REGISTER_API_USER": 1,
+            "JH1_NAME": null,
+            "JH2_NAME": null,
+            "GENDER": "M",
+            "MANDATE_STATUS": "Mandate received and sent to bank for Processing. Awaiting confirmation for the same.",
+            "WC_GAME_FLAG": 1,
+            "TEAM_ID": "23"
+        }
+    ]
+}

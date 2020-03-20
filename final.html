@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <title> Final</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/54a75f8cc2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src='progressbar.js'></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fluid {
+            color: #993333;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        .video-js {
+            display: block;
+            width: 99vw;
+            height: 99vh;
+            object-fit: cover;
+        }
+
+        #no_of_goals {
+            color: #ffffff;
+        }
+
+        span.line4 {
+            font-size: 15px;
+        }
+
+        span.line5 {
+            font-size: 15px;
+        }
+
+        .main-container {
+            position: relative !important;
+        }
+
+        .line0 {
+            position: relative;
+            top: 100px;
+            left: 270px;
+            height: 40px;
+            color: #ffffff;
+            font-size: 80px;
+        }
+
+        .line1 {
+            position: relative;
+            top: 72px;
+            left: 550px;
+            height: 40px;
+            color: #ffffff;
+            font-size: 40px;
+        }
+
+        .line259 {
+            position: relative;
+            top: 80px;
+            left: 250px;
+            height: 40px;
+            color: #ffffff;
+            font-size: 40px;
+        }
+
+        .line2 {
+            position: relative;
+            top: 43px;
+            left: 470px;
+            height: 40px;
+            font-size: 30px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 140px;
+            left: 210px;
+            height: 40px;
+            font-size: 40px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 145px;
+            left: 512px;
+            font-size: 30px;
+        }
+
+        .line5 {
+            position: absolute;
+            top: 145px;
+            left: 780px;
+            font-size: 30px;
+        }
+
+        .line6 {
+            position: absolute;
+            top: 275px;
+            left: 515px;
+            font-size: 30px;
+        }
+
+        .line7 {
+            position: absolute;
+            top: 260px;
+            left: 940px;
+            font-size: 30px;
+        }
+
+        .line8 {
+            position: relative;
+            top: 50px;
+            left: 680px;
+            height: 40px;
+            font-size: 30px;
+        }
+
+        .line9 {
+            position: absolute;
+            top: 150px;
+            left: 210px;
+            height: 40px;
+            font-size: 40px;
+        }
+
+        .line10 {
+            position: absolute;
+            top: 150px;
+            left: 512px;
+            font-size: 40px;
+        }
+
+        .line11 {
+            position: absolute;
+            top: 150px;
+            left: 780px;
+            font-size: 30px;
+        }
+
+        .line12 {
+            position: absolute;
+            top: 271px;
+            left: 925px;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .line13 {
+            position: absolute;
+            top: 110px;
+            left: 183px;
+            font-size: 30px;
+            width: 20px;
+            height: 40px;
+        }
+
+        .line19 {
+            position: absolute;
+            top: 110px;
+            left: 503px;
+            font-size: 30px;
+            width: 20px;
+            height: 40px;
+        }
+
+        .line25 {
+            position: absolute;
+            top: 110px;
+            left: 813px;
+            font-size: 30px;
+            width: 20px;
+            height: 40px;
+        }
+
+        .goals {
+            top: 110px;
+        }
+
+        #imageBox1 {
+            border-radius: 25px;
+            width: 280px;
+            height: 110px;
+        }
+
+        #imageBox2 {
+            border-radius: 25px;
+            width: 280px;
+            height: 110px;
+        }
+
+        #imageBox3 {
+            border-radius: 25px;
+            width: 280px;
+            height: 110px;
+        }
+
+        #icon1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+
+        #icon2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+
+        #icon3 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+
+        #nameOfGoals1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #nameOfGoals2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #nameOfGoals3 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #dataOfGoals1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #dataOfGoals2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        #dataOfGoals3 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            font-size: 20px;
+        }
+
+        .line15 {
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            left: 33px;
+        }
+
+        .line21 {
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            left: 33px;
+        }
+
+        .line27 {
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+            left: 33px;
+        }
+
+        .line31 {
+            position: absolute;
+            top: 170px;
+            left: 200px;
+            font-size: 12px;
+        }
+
+        .line42 {
+            position: absolute;
+            top: 170px;
+            left: 550px;
+            font-size: 12px;
+        }
+
+
+        .line53 {
+            position: absolute;
+            top: 170px;
+            left: 880px;
+            font-size: 12px;
+        }
+
+        #mutualFunds {
+            width: 280px;
+        }
+
+        #topSectors {
+            width: 280px;
+        }
+
+        #topStocks {
+            width: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- slide 1 -->
+    <video id='myVideo1' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+        <source src="http://localhost:8081/slide1.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class='row overlay'>
+            <div class="col-12-main-container">
+                <div id="intro" class='col-sm-3 line0'>
+                    Invezta presents <br> portfolio for<br> the month of July
+                </div>
+                <div id="salutation" class='col-sm-3 line1'>
+                    Hello
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slide 2 -->
+    <video id='myVideo2' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+        <source src="http://localhost:8081/slide2.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class='row overlay'>
+            <div class="col-12-main-container">
+                <div id="month" class='col-sm-3 line2'>
+                </div>
+                <div id="current_value" class='col-sm-3 line3'>
+                </div>
+                <div id="gain" class='col-sm-3 line4'>
+                </div>
+                <div id="invested_value" class='col-sm-3 line5'>
+                </div>
+                <div id="irr" class='col-sm-3 line6'>
+                </div>
+
+                <div id="no_of_goals" class='col-sm-3 line7'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slide 3 -->
+    <video id='myVideo3' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+        <source src="http://localhost:8081/slide3.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class='row overlay'>
+            <div class="col-12-main-container">
+                <div id="monthOfInvestments" class='col-sm-3 line8'>
+                </div>
+                <div id="investedAmount" class='col-sm-3 line9'>
+                </div>
+                <div id="withdrawnAmount" class='col-sm-3 col-lg-3 line10'>₹6K
+                </div>
+
+                <div id="gainLoss" class='col-sm-3 line11'>
+                </div>
+
+                <div id="activeSip" class='col-sm-3 line12'>3
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- slide 4   -->
+    <video id='myVideo4' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+        <source src="http://localhost:8081/slide4.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class='row overlay'>
+            <div class="col-12-main-container">
+                <span id="goals">
+                    <div id="goal1" class='col-sm-3 line13'>
+                        <div id="imageBox1" class='col-sm-3 line14'>
+                            <img id="imageBox1" src="http://localhost:8081/goalBox.png">
+                        </div>
+                        <div id="donutChart1" class='col-sm-3 line15'>
+                        </div>
+                        <div id="icon1" class='col-sm-3 line16'>
+                        </div>
+                        <div id="nameOfGoals1" class='col-sm-3 line17'>
+                        </div>
+                        <div id="dataOfGoals1" class='col-sm-3 line18'>
+                        </div>
+                    </div>
+                    <div id="goal2" class='col-sm-3 line19'>
+                        <div id="imageBox2" class='col-sm-3 line20'>
+                        </div>
+                        <div id="donutChart2" class='col-sm-3 line21'>
+                        </div>
+                        <div id="icon2" class='col-sm-3 line22'>
+                        </div>
+                        <div id="nameOfGoals2" class='col-sm-3 line23'>
+                        </div>
+                        <div id="dataOfGoals2" class='col-sm-3 line24'>
+                        </div>
+                    </div>
+                    <div id="goal3" class='col-sm-3 line25'>
+                        <div id="imageBox3" class='col-sm-3 line26'>
+                        </div>
+                        <div id="donutChart3" class='col-sm-3 line27'>
+                        </div>
+                        <div id="icon3" class='col-sm-3 line28'>
+                        </div>
+                        <div id="nameOfGoals3" class='col-sm-3 line29'>
+                        </div>
+                        <div id="dataOfGoals3" class='col-sm-3 line30'>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- slide 5 -->
+    <video id='myVideo5' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+        <source src="http://localhost:8081/slide5.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class='row overlay'>
+            <div class="col-12-main-container">
+                <span id="data">
+                    <div id="mutualFunds" class='col-sm-3 line31'>
+                        <div id="mutualFundsBlock1"
+                            style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                            <div id="mutualFunds1" class='col-sm-3 line311'>
+                            </div>
+                            <div id="mutualFundsData1" class='col-sm-3 line3111'>
+                            </div>
+                        </div>
+                        <div id="mutualFundsBar1" style="margin-bottom: .5rem;" class='col-sm-3 line31111'>
+                        </div>
+                        <div id="mutualFundsBlock2"
+                            style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                            <div id="mutualFunds2" class='col-sm-3 line312'>
+                            </div>
+                            <div id="mutualFundsData2" class='col-sm-3 line3112'>
+                            </div>
+                        </div>
+                        <div id="mutualFundsBar2" style="margin-bottom: .5rem;" class='col-sm-3 line31112'>
+                        </div>
+                        <div id="mutualFundsBlock3"
+                            style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                            <div id="mutualFunds3" class='col-sm-3 line313'>
+                            </div>
+                            <div id="mutualFundsData3" class='col-sm-3 line3113'>
+                            </div>
+                        </div>
+                        <div id="mutualFundsBar3" style="margin-bottom: .5rem;" class='col-sm-3 line31113'>
+                        </div>
+
+                        <div id="mutualFundsBlock4"
+                            style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                            <div id="mutualFunds4" class='col-sm-3 line314'>
+                            </div>
+                            <div id="mutualFundsData4" class='col-sm-3 line3114'>
+                            </div>
+                        </div>
+                        <div id="mutualFundsBar4" style="margin-bottom: .5rem;" class='col-sm-3 line31114'>
+                        </div>
+                        <div id="mutualFundsBlock5"
+                            style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                            <div id="mutualFunds5" class='col-sm-3 line315'>
+                            </div>
+                            <div id="mutualFundsData5" class='col-sm-3 line3115'>
+                            </div>
+                        </div>
+                        <div id="mutualFundsBar5" style="margin-bottom: .5rem;" class='col-sm-3 line31115'>
+                        </div>
+                    </div>
+                    <div id="topSectors" class='col-sm-3 line42'>
+
+                        <div id="topSectorsBlock1"
+                            style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                            <div id=topSectorsIcon1 style="font-size: 28px;margin-right: 1rem;"></div>
+                            <div>
+                                <div style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                    <div id="topSectors1" class='col-sm-1 line421'>
+                                    </div>
+                                    <div id="topSectorsData1" class='col-sm-1 line4221'>
+                                    </div>
+                                </div>
+                                <div id="topSectorsBar1" style="margin-bottom: .5rem;" class='col-sm-1 line41111'>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="topSectorsBlock2"
+                            style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                            <div id=topSectorsIcon2 style="font-size: 28px;margin-right: 1rem;"></div>
+                            <div>
+                                <div style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                    <div id="topSectors2" class='col-sm-2 line422'>
+                                    </div>
+                                    <div id="topSectorsData2" class='col-sm-2 line4222'>
+                                    </div>
+                                </div>
+                                <div id="topSectorsBar2" style="margin-bottom: .5rem;" class='col-sm-2 line41111'>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="topSectorsBlock3"
+                            style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                            <div id=topSectorsIcon3 style="font-size: 28px;margin-right: 1rem;"></div>
+                            <div>
+                                <div style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                    <div id="topSectors3" class='col-sm-3 line423'>
+                                    </div>
+                                    <div id="topSectorsData3" class='col-sm-3 line4223'>
+                                    </div>
+                                </div>
+                                <div id="topSectorsBar3" style="margin-bottom: .5rem;" class='col-sm-3 line41111'>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="topSectorsBlock4"
+                            style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                            <div id=topSectorsIcon4 style="font-size: 28px;margin-right: 1rem;"></div>
+                            <div>
+                                <div style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                    <div id="topSectors4" class='col-sm-3 line424'>
+                                    </div>
+                                    <div id="topSectorsData4" class='col-sm-3 line4224'>
+                                    </div>
+                                </div>
+                                <div id="topSectorsBar4" style="margin-bottom: .5rem;" class='col-sm-3 line41111'>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="topSectorsBlock5" style="display: flex;">
+                            <div id=topSectorsIcon5 style="font-size: 28px;margin-right: 1rem;"></div>
+                            <div>
+                                <div style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                    <div id="topSectors5" class='col-sm-3 line425'>
+                                    </div>
+                                    <div id="topSectorsData5" class='col-sm-3 line4122'>
+                                    </div>
+                                </div>
+                                <div id="topSectorsBar5" style="margin-bottom: .5rem;" class='col-sm-3 line41111'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="topStocks" class='col-sm-3 line53'>
+                        <div id="topStocksBlock1"
+                            style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                            <div id="topStocks1" class='col-sm-3 line521'>
+                            </div>
+                            <div id="topStocksData1" class='col-sm-3 line5221'>
+                            </div>
+                        </div>
+                        <div id="textBlock1">Equity</div>
+                        <div id="topStocksBlock2"
+                            style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                            <div id="topStocks2" class='col-sm-3 line522'>
+                            </div>
+                            <div id="topStocksData2" class='col-sm-3 line5222'>
+                            </div>
+                        </div>
+                        <div id="textBlock2">Equity</div>
+                        <div id="topStocksBlock3"
+                            style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                            <div id="topStocks3" class='col-sm-3 line523'>
+                            </div>
+                            <div id="topStocksData3" class='col-sm-3 line5223'>
+                            </div>
+                        </div>
+                        <div id="textBlock3">Equity</div>
+                        <div id="topStocksBlock4"
+                            style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                            <div id="topStocks4" class='col-sm-3 line524'>
+                            </div>
+                            <div id="topStocksData4" class='col-sm-3 line5224'>
+                            </div>
+                        </div>
+                        <div id="textBlock4">Equity</div>
+                        <div id="topStocksBlock5"
+                            style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                            <div id="topStocks5" class='col-sm-3 line525'>
+                            </div>
+                            <div id="topStocksData5" class='col-sm-3 line5122'>
+                            </div>
+                        </div>
+                        <div id="textBlock5">Equity</div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script type="text/javascript" src='apiFetch.js'></script>
+    <!-- Script to fetch data from server and store in localStorage-->
+    <script type="text/javascript" src='utilities.js'></script>
+    <!-- Script for some utility methods for converting numbers to currencies -->
+    <script type="text/javascript" src='textToSpeech1.js'></script>
+    <!-- Script to change the text to speech of first slide -->
+    <script type="text/javascript" src='populateData1.js'></script>
+    <!-- Script to populate data in fields from localstorage in slide1 -->
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <title> Slide5</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/54a75f8cc2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fluid {
+            color: #993333;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        .video-js {
+            display: block;
+            width: 99vw;
+            height: 99vh;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .main-container {
+            position: relative !important;
+        }
+
+        .line1 {
+            position: absolute;
+            top: 170px;
+            left: 200px;
+            font-size: 12px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 170px;
+            left: 550px;
+            font-size: 12px;
+        }
+
+
+        .line3 {
+            position: absolute;
+            top: 170px;
+            left: 900px;
+            font-size: 12px;
+        }
+
+        #mutualFunds {
+            width: 280px;
+        }
+
+        #topSectors {
+            width: 280px;
+        }
+
+        #topStocks {
+            width: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <video id='myVideo5' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+            <source src="http://localhost:8081/slide5.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid">
+            <div class='row overlay'>
+                <div class="col-12-main-container">
+                    <span id="data">
+                        <div id="mutualFunds" class='col-sm-3 line1'>
+                            <div id="mutualFundsBlock1"
+                                style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                <div id="mutualFunds1" class='col-sm-3 line11'>
+                                </div>
+                                <div id="mutualFundsData1" class='col-sm-3 line111'>
+                                </div>
+                            </div>
+                            <div id="mutualFundsBar1" style="margin-bottom: .5rem;" class='col-sm-3 line1111'>
+                            </div>
+                            <div id="mutualFundsBlock2"
+                                style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                <div id="mutualFunds2" class='col-sm-3 line12'>
+                                </div>
+                                <div id="mutualFundsData2" class='col-sm-3 line112'>
+                                </div>
+                            </div>
+                            <div id="mutualFundsBar2" style="margin-bottom: .5rem;" class='col-sm-3 line1112'>
+                            </div>
+                            <div id="mutualFundsBlock3"
+                                style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                <div id="mutualFunds3" class='col-sm-3 line13'>
+                                </div>
+                                <div id="mutualFundsData3" class='col-sm-3 line113'>
+                                </div>
+                            </div>
+                            <div id="mutualFundsBar3" style="margin-bottom: .5rem;" class='col-sm-3 line1113'>
+                            </div>
+
+                            <div id="mutualFundsBlock4"
+                                style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                <div id="mutualFunds4" class='col-sm-3 line14'>
+                                </div>
+                                <div id="mutualFundsData4" class='col-sm-3 line114'>
+                                </div>
+                            </div>
+                            <div id="mutualFundsBar4" style="margin-bottom: .5rem;" class='col-sm-3 line1114'>
+                            </div>
+                            <div id="mutualFundsBlock5"
+                                style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                <div id="mutualFunds5" class='col-sm-3 line15'>
+                                </div>
+                                <div id="mutualFundsData5" class='col-sm-3 line115'>
+                                </div>
+                            </div>
+                            <div id="mutualFundsBar5" style="margin-bottom: .5rem;" class='col-sm-3 line1115'>
+                            </div>
+                        </div>
+                        <div id="topSectors" class='col-sm-3 line2'>
+
+                            <div id="topSectorsBlock1"
+                                style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                                <div id=topSectorsIcon1 style="font-size: 28px;margin-right: 1rem;"></div>
+                                <div>
+                                    <div
+                                        style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                        <div id="topSectors1" class='col-sm-1 line21'>
+                                        </div>
+                                        <div id="topSectorsData1" class='col-sm-1 line221'>
+                                        </div>
+                                    </div>
+                                    <div id="topSectorsBar1" style="margin-bottom: .5rem;" class='col-sm-1 line1111'>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="topSectorsBlock2" style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                                <div id=topSectorsIcon2 style="font-size: 28px;margin-right: 1rem;"></div>
+                                <div>
+                                    <div 
+                                        style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                        <div id="topSectors2" class='col-sm-2 line22'>
+                                        </div>
+                                        <div id="topSectorsData2" class='col-sm-2 line222'>
+                                        </div>
+                                    </div>
+                                    <div id="topSectorsBar2" style="margin-bottom: .5rem;" class='col-sm-2 line1111'>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="topSectorsBlock3" style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                                <div id=topSectorsIcon3 style="font-size: 28px;margin-right: 1rem;"></div>
+                                <div>
+                                    <div 
+                                        style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                        <div id="topSectors3" class='col-sm-3 line23'>
+                                        </div>
+                                        <div id="topSectorsData3" class='col-sm-3 line223'>
+                                        </div>
+                                    </div>
+                                    <div id="topSectorsBar3" style="margin-bottom: .5rem;" class='col-sm-3 line1111'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="topSectorsBlock4" style="display: flex;    justify-content: space-between; margin-right: 1rem;">
+                                <div id=topSectorsIcon4 style="font-size: 28px;margin-right: 1rem;"></div>
+                                <div>
+                                    <div
+                                        style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                        <div id="topSectors4" class='col-sm-3 line24'>
+                                        </div>
+                                        <div id="topSectorsData4" class='col-sm-3 line224'>
+                                        </div>
+                                    </div>
+                                    <div id="topSectorsBar4" style="margin-bottom: .5rem;" class='col-sm-3 line1111'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="topSectorsBlock5" style="display: flex;">
+                                <div id=topSectorsIcon5 style="font-size: 28px;margin-right: 1rem;"></div>
+                                <div>
+                                    <div
+                                        style="display: flex;    justify-content: space-between; margin-bottom: .5rem;">
+                                        <div id="topSectors5" class='col-sm-3 line25'>
+                                        </div>
+                                        <div id="topSectorsData5" class='col-sm-3 line122'>
+                                        </div>
+                                    </div>
+                                    <div id="topSectorsBar5" style="margin-bottom: .5rem;" class='col-sm-3 line1111'>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="topStocks" class='col-sm-3 line3'>
+                            <div id="topStocksBlock1" style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                                <div id="topStocks1" class='col-sm-3 line21'>
+                                </div>
+                                <div id="topStocksData1" class='col-sm-3 line221'>
+                                </div>
+                            </div>
+                            <div id="textBlock1">Equity</div>
+                            <div id="topStocksBlock2" style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                                <div id="topStocks2" class='col-sm-3 line22'>
+                                </div>
+                                <div id="topStocksData2" class='col-sm-3 line222'>
+                                </div>
+                            </div>
+                            <div id="textBlock2">Equity</div>
+                            <div id="topStocksBlock3" style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                                <div id="topStocks3" class='col-sm-3 line23'>
+                                </div>
+                                <div id="topStocksData3" class='col-sm-3 line223'>
+                                </div>
+                            </div>
+                            <div id="textBlock3">Equity</div>
+                            <div id="topStocksBlock4" style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                                <div id="topStocks4" class='col-sm-3 line24'>
+                                </div>
+                                <div id="topStocksData4" class='col-sm-3 line224'>
+                                </div>
+                            </div>
+                            <div id="textBlock4">Equity</div>
+                            <div id="topStocksBlock5" style="display: flex;    justify-content: space-between; margin-top: .5rem;">
+                                <div id="topStocks5" class='col-sm-3 line25'>
+                                </div>
+                                <div id="topStocksData5" class='col-sm-3 line122'>
+                                </div>
+                            </div>
+                            <div id="textBlock5">Equity</div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script type="text/javascript" src='progressbar.js'></script>
+    <script type="text/javascript" src='utilities.js'></script>
+    <script type="text/javascript" src='fetchData5.js'></script>
+    <script type="text/javascript" src='textToSpeech5.js'></script>
+</body>
+
+</html>

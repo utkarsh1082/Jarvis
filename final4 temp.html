@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <title> Slide4 temp</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { packages: ['corechart'] });     
+    </script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fluid {
+            color: #993333;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        .video-js {
+            display: block;
+            width: 99vw;
+            height: 99vh;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .main-container {
+            position: relative !important;
+        }
+
+        .line0 {
+            position: absolute;
+            top: 130px;
+            left: 165px;
+            height: 300px;
+            width: 300px;
+            font-size: 30px;
+        }
+        .line2 {
+            position: absolute;
+            top: 145px;
+            left: 512px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 145px;
+            left: 780px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 275px;
+            left: 515px;
+        }
+
+        .line5 {
+            position: absolute;
+            top: 272px;
+            left: 947px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <video id='myVideo4' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+            <source src="http://localhost/slide4.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid">
+            <div class='row overlay'>
+                <div class="col-12-main-container">
+
+                    <div id="donutChart" class='col-sm-3 line0'>
+                    </div>
+
+                    <div id="index" class='col-sm-3 line1'>
+
+                        <div id="sector1" class='col-sm-3 line2'>
+                        </div>
+                        <div id="sector2" class='col-sm-3 line3'>
+                        </div>
+                        <div id="sector3" class='col-sm-3 line4'>
+                        </div>
+                        <div id="sector4" class='col-sm-3 line5'>
+                        </div>
+                        <div id="sector5" class='col-sm-3 line6'>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script type="text/javascript" src='utilities.js'></script>
+    <script type="text/javascript" src='fetchData4temp.js'></script>
+    <script type="text/javascript" src='textToSpeech4temp.js'></script>
+</body>
+
+</html>

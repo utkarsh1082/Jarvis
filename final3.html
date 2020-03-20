@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <title> Slide3</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fluid {
+            color: #993333;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        .video-js {
+            display: block;
+            width: 99vw;
+            height: 99vh;
+            object-fit: cover;
+        }
+
+        .main-container {
+            position: relative !important;
+        }
+
+        .line0 {
+            position: relative;
+            top: 50px;
+            left: 680px;
+            height: 40px;
+            font-size: 30px;
+        }
+
+        .line1 {
+            position: absolute;
+            top: 150px;
+            left: 210px;
+            height: 40px;
+            font-size: 40px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 150px;
+            left: 512px;
+            font-size: 40px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 150px;
+            left: 780px;
+            font-size: 30px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 271px;
+            left: 925px;
+            font-size: 30px;
+             color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <video id='myVideo1' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+        <source src="http://localhost:8081/slide3.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class='row overlay'>
+            <div class="col-12-main-container">
+                <div id="month" class='col-sm-3 line0'>
+                </div>
+                <div id="invested_amount" class='col-sm-3 line1'>
+                </div>
+
+                <div id="withdrawn_amount" class='col-sm-3 line2'>
+                </div>
+
+                <div id="gain_loss" class='col-sm-3 line3'>
+                </div>
+
+                <div id="active_sip" class='col-sm-3 line4'>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script type="text/javascript" src='utilities.js'></script>
+    <script type="text/javascript" src='fetchData3.js'></script>
+    <script type="text/javascript" src='textToSpeech3.js'></script>
+</body>
+
+</html>

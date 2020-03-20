@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <title> Slide1</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fluid {
+            color: #993333;
+            position: absolute;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            top: 0;
+            left: 0;
+        }
+
+        .video-js {
+            display: block;
+            width: 99vw;
+            height: 99vh;
+            object-fit: cover;
+        }
+
+        #no_of_goals {
+            color: #ffffff;
+        }
+
+        span.line2 {
+            font-size: 15px;
+        }
+
+        span.line3 {
+            font-size: 15px;
+        }
+
+        .main-container {
+            position: relative !important;
+        }
+
+        .line0 {
+            position: relative;
+            top: 100px;
+            left: 270px;
+            height: 40px;
+            color: #ffffff;
+            font-size: 80px;
+        }
+
+        .line1 {
+            position: relative;
+            top: 72px;
+            left: 550px;
+            height: 40px;
+            color: #ffffff;
+            font-size: 40px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 75px;
+            left: 240px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 75px;
+            left: 390px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 125px;
+            left: 240px;
+        }
+
+        .line5 {
+            position: absolute;
+            top: 122px;
+            left: 478px;
+        }
+    </style>
+</head>
+
+<body>
+    <video id='myVideo' class='video-js vjs-big-play-centered' controls="controls" data-setup='{}'>
+        <source src="http://localhost:8081/slide1.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+        <div class='row overlay'>
+            <div class="col-12-main-container">
+                <div id="intro" class='col-sm-3 line0'>
+                    Investa presents <br> portfolio for<br> the month
+                </div>
+                <div id="salutation" class='col-sm-3 line1'>
+                    Hi
+                </div>
+                <!--                     
+                    <div id="gain" class='col-sm-3 line2'>
+                        9.57%
+                    </div>
+
+                    <div id="invested_value" class='col-sm-3 line3'>
+                        6.06L
+                    </div>
+
+                    <div id="irr" class='col-sm-3 line4' id="irr">
+                        11.15%
+                    </div>
+
+                    <div id="no_of_goals" class='col-sm-3 line5'>
+                        3
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script type="text/javascript" src='fetchData1.js'></script>
+    <script type="text/javascript" src='textToSpeech1.js'></script>
+</body>
+
+</html>
